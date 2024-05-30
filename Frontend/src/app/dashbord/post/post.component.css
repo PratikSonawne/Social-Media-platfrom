@@ -1,0 +1,48 @@
+body {
+  background-color: #f0f0f0; /* Set the background color for the entire page */
+}
+
+h1 {
+  color: #333; /* Set the color of the heading */
+}
+
+textarea {
+  width: 300px; /* Set the width of the textarea */
+  height: 100px; /* Set the height of the textarea */
+}
+
+button {
+  background-color: #4caf50; /* Set the background color of buttons */
+  color: white; /* Set the text color of buttons */
+  padding: 10px 20px; /* Add padding to buttons */
+  border: none; /* Remove border from buttons */
+  cursor: pointer; /* Add a pointer cursor to buttons */
+}
+
+table {
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+td {
+  padding: 10px; /* Add padding to table cells */
+}
+
+input[type="text"] {
+  width: 200px; /* Set the width of text inputs */
+  padding: 5px; /* Add padding to text inputs */
+}
+
+/* Styling for the container div */
+.container {
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container */
+  background-color: #fff; /* Set the background color of the container */
+  border-radius: 5px; /* Add border radius to the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the container */
+}
+.content-box {
+  background-color: #f0f0f0; /* Set background color */
+  border: 1px solid #ccc; /* Add border */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+}

@@ -1,0 +1,45 @@
+<h1>Add  NEW  Post</h1>
+<div>
+  <textarea [(ngModel)]="posta" rows=""></textarea>
+  <button (click)="postthis()">Post</button>
+</div>
+<br><br>
+
+
+
+<table border="1">
+  <tr *ngFor="let post of postlist; let i=index;">
+    <td>
+              <!-- <td>{{post.username}}</td><br><br> -->
+              Posted By : {{post.username}} <br><br>
+              Post Date And Time : {{ post.date | date:'short' }}<br><br> 
+             <div class="content-box"> {{ post.content }} </div><br><br>
+              
+              {{ post.likecount }} <button (click)="likepost(post)">like</button> <br><br>
+             
+              
+            <tr>
+                  <td>
+                    <input type="text" [(ngModel)]="post.comments"> 
+                  </td>
+                
+                <td>
+                  <button (click)="addcomment(post)">comment</button><br><br>
+                  <button (click)="getCommentsAll(post)">Get Allcomments</button>
+                 </td>
+          </tr>
+          
+
+              <div *ngIf="wts==6">
+                ALL comments
+                <table border="1">
+                  <tr *ngFor="let c of this.app.commentslist">
+                    <td>{{ c.username }} : {{ c.comments }}</td>  
+                  </tr>
+                </table>
+           
+              </div>
+    </td>
+   </tr>
+      
+</table>

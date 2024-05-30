@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+        
+       <div *ngIf="videos.length > 0">
+            <h2>{{ currentVideo.title }}</h2>
+            <video [src]="currentVideo.url" controls autoplay width="400px" height="500px"></video>
+            <p>{{ currentVideo.description }}</p>
+            <button (click)="previousVideo()">Previous</button>
+            <button (click)="nextVideo()">Next</button>
+          </div>
+          <div *ngIf="videos.length === 0">
+            <p>No videos found</p>
+          </div>
+
+</body>
+</html> 
+

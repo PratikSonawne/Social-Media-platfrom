@@ -1,0 +1,71 @@
+body {
+    background-color: #f0f8ff; /* Light blue background color */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Container styling */
+div {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: calc(100% - 12px); /* Full width minus padding */
+    padding: 8px; /* Padding for comfortable input */
+    margin-bottom: 10px; /* Margin below the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button styling */
+button {
+    padding: 8px 12px; /* Padding for buttons */
+    margin-right: 10px; /* Margin to separate buttons */
+    background-color: seagreen; /* Bootstrap primary blue */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: lightcoral; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse cell borders */
+    margin-top: 10px; /* Margin above the table */
+}
+
+table, th, td {
+    border: 1px solid lightcyan; /* Light gray border for table and cells */
+}
+
+th, td {
+    padding: 8px; /* Padding for cells */
+    text-align: left; /* Left-align cell content */
+}
+
+th {
+    background-color: #d2dae2; /* Light gray background for header cells */
+}
+
+tr:nth-child(even) {
+    background-color: #e0e7ecba; /* Light gray background for even rows */
+}

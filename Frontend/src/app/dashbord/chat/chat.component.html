@@ -1,0 +1,47 @@
+<!-- <button (click)="wts=1;">Frinds list</button> <br><br>
+<button (click)="watingmassages();">Wating Massages</button>
+<div *ngIf="wts==1">
+
+
+        <table border="2">
+        
+            <tr *ngFor="let user of frindslist">
+            <td> {{user.username}}</td>
+            <td><button (click)="wts=4 ;userid2=user.id; targetusername=user.username" >Massage</button></td>
+
+        </tr>
+        </table>
+        </div> <br><br>
+       
+        <div *ngIf="wts==4"> 
+            <br><br>
+            {{targetusername}})
+            <br> <br> 
+            <tr *ngFor="let user of currentmessage">
+                <td>  
+                {{user.username}} :
+                    {{user}} <br> <br>
+                    {{user.date|date:'short'}}
+                </td>
+
+
+            <input type="text" [(ngModel)]="message">
+            <button (click)="messagesend()">Massage</button>
+
+    
+</div> 
+<div *ngIf="wts==2">
+  <table border="1">
+    <tr *ngFor="let user of this.messagetod">
+        <td>
+            {{user.username}} :
+            {{user.message}} <br> <br>
+            {{user.date|date:'short'}}
+        </td>
+        <td> <button (click)="wts=4;this.targetusername=user.username ;this.currentmessage=user">Replay</button></td>
+    </tr>
+
+  </table>
+</div> -->
+
+<h1> Development in progress</h1>

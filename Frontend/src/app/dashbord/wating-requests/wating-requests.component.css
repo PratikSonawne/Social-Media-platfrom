@@ -1,0 +1,87 @@
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 6px;
+  }
+  
+  button {
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f2f2f2;
+  }
+   */
+
+   body {
+    font-family: Arial, sans-serif; /* Default font */
+    padding: 20px; /* Padding for the page */
+    background-color: #f0f8ff; /* Light blue background color */
+}
+
+/* Headings styling */
+h1 {
+    color: #333; /* Dark gray text color */
+    text-align: center; /* Center-align heading */
+    margin-bottom: 20px; /* Margin below heading */
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Table width relative to the container */
+    margin: 0 auto; /* Center-align the table */
+    border-collapse: collapse; /* Collapse cell borders */
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+th, td {
+    padding: 12px; /* Add padding for comfort */
+    border: 1px solid #ccc; /* Light gray border */
+    text-align: center; /* Center-align cell content */
+}
+
+th {
+    background-color: #f8f9fa; /* Light gray background for header */
+    font-weight: bold; /* Bold font weight */
+}
+
+tr:nth-child(even) {
+    background-color: rgb(238, 181, 181); /* Light gray background for even rows */
+}
+
+/* Button styling */
+button {
+    padding: 8px 12px; /* Padding for buttons */
+    margin: 0 5px; /* Margin to separate buttons */
+    background-color: green; /* Bootstrap primary blue */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0057b3d4; /* Darker blue on hover */
+}

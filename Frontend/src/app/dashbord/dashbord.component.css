@@ -1,0 +1,45 @@
+.content {
+  padding: 26px;
+  background-color: #e0f7fa; /* Light blue-green background color */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto; /* Center the container on the page */
+}
+
+/* Heading */
+.content h1 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #333; /* Dark gray text color */
+}
+
+/* Tab buttons container */
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* Tab buttons */
+.tab {
+  padding: 15px 20px;
+  margin-right: 15px;
+  background-color: lightcoral; /* Teal background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+/* Tab button hover effect */
+.tab:hover {
+  background-color: lightcoral; /* Darker teal on hover */
+}
+
+/* Active tab button */
+.tab.active {
+  background-color: #004179; /* Darker teal when active */
+}

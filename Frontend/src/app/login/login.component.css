@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-color: #e0f7fa; 
+}
+
+.login {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    border: 2px solid #009688; 
+}
+
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #009688; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #00796b; 
+ }
+.main {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Marquee effect using keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

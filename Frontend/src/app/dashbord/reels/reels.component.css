@@ -1,0 +1,48 @@
+body {
+    background-color: #243B55; /* Dark blue background */
+    color: white; /* White text for readability */
+    font-family: Arial, sans-serif; /* Basic font stack */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding for content breathing room */
+    display: flex; /* Center align content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+}
+  
+h1 {
+    text-align: center; /* Center the title */
+    font-size: 2em; /* Increase title font size */
+    margin-bottom: 20px; /* Add some space after the title */
+}
+  
+.video-container { /* Target the video container div */
+    display: flex; /* Allow video and description to align side-by-side */
+    justify-content: space-between; /* Space content evenly */
+    align-items: center; /* Vertically align content */
+}
+  
+video { /* Style the video element */
+    max-width: 400px; /* Ensure video doesn't overflow container */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+}
+  
+p { /* Style the video description paragraph */
+    margin-top: 10px; /* Add some space above the paragraph */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+  
+button { /* Style the buttons */
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px 20px; /* Add padding for button text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable behavior */
+    margin-right: 10px; /* Add some margin between buttons */
+}
+  
+button:hover { /* Style button hover effect */
+    background-color: #3e8e41; /* Darken green on hover */
+}

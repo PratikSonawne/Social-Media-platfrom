@@ -1,0 +1,49 @@
+.containar {
+    max-width: 400px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container with auto margins */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Input field styling */
+.containar input[type="text"],
+.containar input[type="password"],
+.containar input[type="number"] {
+    width: calc(100% - 12px); /* Full width minus padding */
+    padding: 8px; /* Add padding */
+    margin-bottom: 15px; /* Margin between fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button styling */
+.containar button {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Add padding for comfortable click */
+    background-color: #009688; /* Change the button background color */
+    /* Bootstrap primary blue */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+.containar button:hover {
+    background-color: lightcoral; /* Darker blue on hover */
+}
+
+/* Focus effect for accessibility */
+.containar input:focus,
+.containar button:focus {
+    background-color: hsl(174, 100%, 29%); /* Change the button background color */
+    outline: 2px solid green ; /* Blue outline on focus */
+    outline-offset: 2px; /* Offset the outline */
+}

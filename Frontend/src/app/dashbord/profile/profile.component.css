@@ -1,0 +1,79 @@
+
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0057b3ab;
+}
+
+/* Styling tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.905);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eca1a6;
+    color: white;
+}
+
+td:nth-child(1) {
+    width: 10%;
+} 
+/* Styling for the followers, following, status, and buttons */
+#stats {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 0, 0.905);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eca1a6;
+    color: white;
+}
+
+td:nth-child(1) {
+    width: 10%;
+}
+
+/* Styling for the divs with ngIf */
+.container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.content-box {
+    background-color: #f0f0f0; /* Set background color */
+    border: 1px solid #ccc; /* Add border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+  }
+  

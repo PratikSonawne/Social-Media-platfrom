@@ -1,0 +1,19 @@
+<input type="text" [(ngModel)]="this.sname"> <br><br>
+<button (click)="Search(this.search)"> Search</button>
+<br><br>
+<button (click)="Reload()">Reload</button>
+
+<div>
+    <table border="1">
+        <td>SN</td>
+        <td>Name</td>
+        <td> follow</td>
+    
+    <tr *ngFor="let user of app.List;let i=index">
+        <th>{{i+1}}</th>
+        <th>{{user.username}}</th>
+        <th><button (click)="follow(user.id)">follow</button></th>
+
+    </tr>
+</table>
+</div>

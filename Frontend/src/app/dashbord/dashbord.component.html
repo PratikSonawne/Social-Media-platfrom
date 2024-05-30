@@ -1,0 +1,17 @@
+<div class="content">
+    <h1>Welcome {{app.username}}</h1>
+    <div class="features">
+        <button class="tab" (click)="whattosshowc=1">Chat</button>
+        <button class="tab" (click)="whattosshowc=2">Post</button>
+        <button class="tab" (click)="whattosshowc=3">Profile</button>
+        <button class="tab" (click)="whattosshowc=4">Search</button>
+        <button class="tab" (click)="whattosshowc=5">Waiting Requests</button>
+        <button class="tab" (click)="whattosshowc=6">Reels</button>
+    </div>
+    <div *ngIf="whattosshowc==1"><app-chat></app-chat></div>
+    <div *ngIf="whattosshowc==2"><app-post></app-post></div>
+    <div *ngIf="whattosshowc==3"><app-profile></app-profile></div>
+    <div *ngIf="whattosshowc==4"><app-search></app-search></div>
+    <div *ngIf="whattosshowc==5"><app-wating-requests></app-wating-requests></div>
+    <div *ngIf="whattosshowc==6"><app-reels></app-reels></div>
+</div>

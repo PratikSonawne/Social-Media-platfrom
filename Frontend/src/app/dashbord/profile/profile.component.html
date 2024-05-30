@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        Followers  : {{this.followers}} <br><br>
+        Following  : {{this.following}}<br><br>
+        Status     : {{this.status}}  <button (click)= "UpdateStatus()">Update Status</button>
+
+        <button (click)="getfollowerslist();wts=1" >Followers</button> <br><br>
+        <button (click)="getmyposts() ;wts=3">My posts</button>
+        <button (click)="getfollowinglist() ;wts=2">Following</button><br><br>
+        
+
+        <div *ngIf="wts==1" > 
+            <table border="1">
+                <th>SN</th>
+                <th>Name</th>
+        
+            <tr *ngFor="let user of followerslist; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{user.username}}</td>
+        </tr>
+    </table>
+        </div>
+        
+        <div *ngIf="wts==2" > 
+            <table border="1">
+                <th>SN</th>
+                <th>Name</th>
+            
+            <tr *ngFor="let user of followingList; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{user.username}}</td>
+            
+        </tr>
+    </table>
+
+
+        </div>
+        <div *ngIf="wts==3">
+
+
+        <table border="1">
+            <tr *ngFor="let post of this.app.Apostlist; let i=index">
+                            <td>{{i+1}})
+                            {{this.app.username}}<br><br>
+                            {{post.content}}<br><br>
+                            {{post.date| date:'short'}}<br><br>
+                           Likes :  {{ post.likecount }}  <br><br>
+                           <button (click)="getCommentsAll(post)">get comments</button>
+                        </td>
+                            
+                            
+                              
+
+                              <div *ngIf="wtsc==1">
+                               
+                                <table border="1">
+                                  <tr *ngFor="let c of this.app.commentslist">
+                                    <td>{{ c.username }}  </td>
+                                    {{ c.comments }} 
+                                    {{ c.date|date:'short' }}
+                                  </tr>
+                                </table>
+                              </div>
+            </tr>
+
+        </table>
+        </div>
+
+
+    </body>
+    </html>

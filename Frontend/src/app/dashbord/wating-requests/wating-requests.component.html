@@ -1,0 +1,22 @@
+<h1>Wating Requests</h1>
+
+<br><br>
+
+<table border="1">
+    <tr>
+        
+        <th>User Name</th>
+        <th>Aceptet</th>
+        <th>Reject</th>
+        <th>Block</th>
+    </tr>
+    <tr *ngFor="let user of watingreq; let i=index">
+
+        
+        <td>{{user.username}}</td>
+        <td><button (click)="setconnctionS(user.id,2)" >Accept</button></td>
+        <td><button (click)="setconnctionS(user.id,3)" >Reject</button></td>
+        <td><button  (click)="setconnctionS(user.id,4)" >Block</button></td>
+       
+    </tr>
+</table>
